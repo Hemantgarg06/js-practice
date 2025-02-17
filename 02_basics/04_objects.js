@@ -45,11 +45,47 @@ const users = [
 
 users[1].email
 
-console.log(twitterUser);
+// console.log(twitterUser);
 
-console.log(Object.keys(twitterUser));  //important
-console.log(Object.values(twitterUser));
-console.log(Object.entries(twitterUser));
+// console.log(Object.keys(twitterUser));  //important
+// console.log(Object.values(twitterUser));
+// console.log(Object.entries(twitterUser));
 
-console.log(twitterUser.hasOwnProperty('isLoggedIn'));
+// console.log(twitterUser.hasOwnProperty('isLoggedIn'));
 
+const course = {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor  
+// we can also use below method to access
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+//OR if we want a smaller name we can use below one
+const {courseInstructor: instructor} = course   //Destructuring of Object
+
+console.log(instructor);
+
+//This is a react concept just for idea 
+// const navbar = ({company}) => { //Destructuring
+
+// }
+// navbar(company = "Hitesh")
+
+
+// jSON
+
+// {
+//     "name": "Hemant",
+//     "coursename": "Js in Hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
